@@ -97,11 +97,12 @@ public class UserController {
         log.info("sessAuthCode : {}", sessAuthCode);
 
         if(authCode.equals(sessAuthCode)){
-            return ResponseEntity.ok().body(true);
+            return ResponseEntity
+                    .ok()
+                    .body(true);
         }
-        return ResponseEntity.ok().body(false);
+        return ResponseEntity
+                .ok()
+                .body(false);
     }
-
-
-
 }
