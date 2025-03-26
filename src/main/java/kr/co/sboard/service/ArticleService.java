@@ -11,6 +11,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
+import javax.swing.text.html.parser.Entity;
+
 @Slf4j
 @RequiredArgsConstructor
 @Component
@@ -20,17 +22,20 @@ public class ArticleService {
     private final ArticleMapper articleMapper;
     private final ModelMapper modelMapper;
 
-    public void register(ArticleDTO articleDTO){
+    public int register(ArticleDTO articleDTO){
 
         // 엔티티 변환
         Article article = modelMapper.map(articleDTO, Article.class);
         log.info("article : {}", article);
 
         // JPA 저장
-        //articleRepository.save(article);
+        Article savedArticle = articleRepository.save(article);
 
         // Mybatis 저장
-        articleMapper.insertArticle(articleDTO);
+        //articleMapper.insertArticle(articleDTO);
+
+        // 저장한 글번호 반환
+        return savedArticle.getNo();
     }
 
 }

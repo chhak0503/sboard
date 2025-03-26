@@ -6,6 +6,8 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.web.multipart.MultipartFile;
 
+import java.util.List;
+
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
@@ -22,7 +24,12 @@ public class ArticleDTO {
     private String regip;
     private String wdate;
 
+    // 첨부파일 객체
     private MultipartFile file1;
     private MultipartFile file2;
+
+    public List<MultipartFile> getMultipartFiles(){
+        return List.of(file1, file2);
+    }
 
 }
