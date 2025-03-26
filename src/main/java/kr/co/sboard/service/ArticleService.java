@@ -29,13 +29,17 @@ public class ArticleService {
         log.info("article : {}", article);
 
         // JPA 저장
-        Article savedArticle = articleRepository.save(article);
+        //Article savedArticle = articleRepository.save(article);
+        // 저장한 글번호 반환
+        //return savedArticle.getNo();
 
         // Mybatis 저장
-        //articleMapper.insertArticle(articleDTO);
+        articleMapper.insertArticle(articleDTO);
 
-        // 저장한 글번호 반환
-        return savedArticle.getNo();
+        // 매개변수로 전달되는 articleDTO의 no 속성에 mybatis가 INSERT한 데이터의 pk값을 반환
+        int no = articleDTO.getNo();
+
+        return no;
     }
 
 }
