@@ -13,7 +13,7 @@
                 <nav>
                     <h1>글쓰기</h1>
                 </nav>
-                <form th:action="@{/article/write}" method="post">
+                <form th:action="@{/article/write}" method="post" enctype="multipart/form-data">
                     <input type="hidden" name="writer" th:value="${#authentication.principal.user.uid}"/>
                     <table border="0">                        
                         <tr>

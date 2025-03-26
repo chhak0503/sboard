@@ -42,6 +42,10 @@ public class ArticleController {
         String regip = request.getRemoteAddr();
         articleDTO.setRegip(regip);
         log.info("articleDTO : {}", articleDTO);
+        
+        // 파일 업로드 서비스 호출
+
+        
 
         // 서비스 호출
         articleService.register(articleDTO);

@@ -4,6 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.springframework.web.multipart.MultipartFile;
 
 @Data
 @AllArgsConstructor
@@ -20,4 +21,8 @@ public class ArticleDTO {
     private String writer;
     private String regip;
     private String wdate;
+
+    private MultipartFile file1;
+    private MultipartFile file2;
+
 }
