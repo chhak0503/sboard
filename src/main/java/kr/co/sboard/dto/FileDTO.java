@@ -16,4 +16,7 @@ public class FileDTO {
     private String sName;
     private int download;
     private String rdate;
+
+    // 추가 필드
+    private String contentType;
 }

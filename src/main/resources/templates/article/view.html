@@ -4,6 +4,38 @@
     <meta charset="UTF-8">
     <title>글보기</title>
     <link rel="stylesheet" th:href="@{/css/style.css}"/>
+    <script>
+
+        document.addEventListener('DOMContentLoaded', function(){
+
+            const formComment = document.formComment;
+
+            // 댓글 등록
+            formComment.onsubmit = async function(e){
+                e.preventDefault();
+
+                const jsonData = {
+                    "parent": this.parent.value,
+                    "writer": this.writer.value,
+                    "content": this.comment.value
+                };
+
+                const response = await fetch('/comment/write', {
+                                            method: 'POST',
+                                            headers: {"Content-type": "application/json"},
+                                            body: JSON.stringify(jsonData)
+                                        });
+
+                const data = await response.json();
+                console.log(data);
+            }
+        });
+
+
+
+
+    </script>
+
 </head>
 <body>
     <div id="wrapper">
@@ -65,8 +97,10 @@
                 <!-- 댓글쓰기 -->
                 <section class="commentForm">
                     <h3>댓글쓰기</h3>
-                    <form action="#">
-                        <textarea name="content">댓글내용 입력</textarea>
+                    <form name="formComment" method="post">
+                        <input type="hidden" name="writer" th:value="${#authentication.principal.user.uid}">
+                        <input type="hidden" name="parent" th:value="${articleDTO.no}">
+                        <textarea name="comment" placeholder="댓글내용 입력"></textarea>
                         <div>
                             <a href="#" class="btn btnCancel">취소</a>
                             <input type="submit" value="작성완료" class="btn btnComplete"/>

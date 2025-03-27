@@ -41,6 +41,20 @@ public class FileService {
         fileRepository.save(file);
     }
 
+    public FileDTO findById(int fno){
+        Optional<File> optFile = fileRepository.findById(fno);
+
+        if(optFile.isPresent()){
+
+            File file = optFile.get();
+
+            FileDTO fileDTO = modelMapper.map(file, FileDTO.class);
+
+            return fileDTO;
+        }
+        return null;
+    }
+
     @Value("${spring.servlet.multipart.location}")
     private String uploadDir;
 
@@ -91,45 +105,25 @@ public class FileService {
         return fileDTOList;
     }
 
-    public ResponseEntity downloadFile(int fno){
-
-        Optional<File> optFile = fileRepository.findById(fno);
-
-        File file = null;
-
-        if(optFile.isPresent()){
-            file = optFile.get();
-        }
+    public Resource downloadFile(FileDTO fileDTO){
 
         try{
-            Path path = Paths.get(uploadDir + java.io.File.separator + file.getSName());
+            // 파일 패스 정보객체 생성
+            Path path = Paths.get(uploadDir + java.io.File.separator + fileDTO.getSName());
+
+            // 파일 컨텐츠 타입 확인
             String contentType = Files.probeContentType(path);
+            fileDTO.setContentType(contentType);
 
-            // 헤더정보
-            HttpHeaders headers = new HttpHeaders();
-            headers.setContentDisposition(
-                    ContentDisposition.builder("attachment")
-                            .filename(file.getOName(), StandardCharsets.UTF_8)
-                            .build());
-
-            headers.add(HttpHeaders.CONTENT_TYPE, contentType);
-
-            // 파일 다운로드 스트림 작업
+            // 파일 다운로드 스트림 작업으로 파일 자원 객체 생성
             Resource resource = new InputStreamResource(Files.newInputStream(path));
 
-
-            return ResponseEntity
-                    .ok()
-                    .headers(headers)
-                    .body(resource);
+            return resource;
 
         }catch (Exception e){
             log.error(e.getMessage());
         }
-
-        return ResponseEntity
-                .status(HttpStatus.NOT_FOUND)
-                .build();
+        return null;
     }
 
 
