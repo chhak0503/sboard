@@ -16,6 +16,7 @@ public class AppConfig {
 
     @Bean
     public ModelMapper modelMapper(){
+        // DTO와 Entity간 변환을 위한 ModelMapper 설정
 
         ModelMapper modelMapper = new ModelMapper();
         modelMapper

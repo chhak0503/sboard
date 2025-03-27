@@ -55,6 +55,15 @@ public class FileService {
         return null;
     }
 
+    public void updateDownloadCount(FileDTO fileDTO){
+        // 파일 다운로드 카운트 +1
+        int count = fileDTO.getDownload();
+        fileDTO.setDownload(count + 1);
+
+        File file = modelMapper.map(fileDTO, File.class);
+        fileRepository.save(file);
+    }
+
     @Value("${spring.servlet.multipart.location}")
     private String uploadDir;
 

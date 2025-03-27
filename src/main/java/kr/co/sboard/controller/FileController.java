@@ -28,6 +28,10 @@ public class FileController {
             // 파일 조회
             FileDTO fileDTO = fileService.findById(fno);
 
+            // 파일 다운로드 카운트 1증가
+            fileService.updateDownloadCount(fileDTO);
+
+            // 파일 리소스 스트림
             fileService.downloadFile(fileDTO);
 
             log.info("fileDTO : {}", fileDTO);

@@ -43,7 +43,6 @@ public class CommentController {
 
         CommentDTO savedCommentDTO = commentService.save(commentDTO);
 
-
         return savedCommentDTO;
     }
 
