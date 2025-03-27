@@ -108,7 +108,6 @@ public class ArticleService {
     }
 
     public int register(ArticleDTO articleDTO){
-
         // 엔티티 변환
         Article article = modelMapper.map(articleDTO, Article.class);
         log.info("article : {}", article);

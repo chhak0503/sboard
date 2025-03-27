@@ -26,7 +26,7 @@
                         <th>파일</th>
                         <td>
                             <th:block th:each="file:${articleDTO.files}">
-                                <p><a href="#">[[${file.oName}]]</a>&nbsp;<span>[[${file.download}]]</span>회 다운로드</p>
+                                <p><a th:href="@{/file/download(fno=${file.fno})}">[[${file.oName}]]</a>&nbsp;<span>[[${file.download}]]</span>회 다운로드</p>
                             </th:block>
                         </td>
                     </tr>
