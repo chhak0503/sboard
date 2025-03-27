@@ -18,6 +18,7 @@ import org.springframework.stereotype.Service;
 
 import javax.swing.text.html.parser.Entity;
 import java.util.List;
+import java.util.Optional;
 
 @Slf4j
 @RequiredArgsConstructor
@@ -92,6 +93,19 @@ public class ArticleService {
                 .build();
     }
 
+
+    public ArticleDTO findById(int no){
+
+        Optional<Article> optArticle = articleRepository.findById(no);
+
+        if(optArticle.isPresent()){
+            Article article = optArticle.get();
+            ArticleDTO articleDTO = modelMapper.map(article, ArticleDTO.class);
+
+            return articleDTO;
+        }
+        return null;
+    }
 
     public int register(ArticleDTO articleDTO){
 

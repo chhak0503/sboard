@@ -26,15 +26,14 @@
                         <input type="submit" value="검색">
                     </form>
                 </nav>
-                                
-                <table border="0">                    
+                <table border="0">
                     <tr>
                         <th>번호</th>
                         <th>제목</th>
                         <th>글쓴이</th>
                         <th>날짜</th>
                         <th>조회</th>
-                    </tr>                    
+                    </tr>
                     <tr th:each="article, i:${pageResponseDTO.dtoList}">
                         <td>[[${pageResponseDTO.startNo - i.index}]]</td>
                         <td><a th:href="@{/article/view}">[[${article.title}]]&#91;[[${article.comment}]]&#93;</a></td>

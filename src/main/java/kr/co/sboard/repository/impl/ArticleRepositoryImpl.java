@@ -32,7 +32,7 @@ public class ArticleRepositoryImpl implements ArticleRepositoryCustom {
                                         .select(qArticle, qUser.nick)
                                         .from(qArticle)
                                         .join(qUser)
-                                        .on(qArticle.writer.eq(qUser.uid))
+                                        .on(qArticle.user.uid.eq(qUser.uid))
                                         .offset(pageable.getOffset())
                                         .limit(pageable.getPageSize())
                                         .orderBy(qArticle.no.desc())
@@ -66,7 +66,7 @@ public class ArticleRepositoryImpl implements ArticleRepositoryCustom {
                 .select(qArticle, qUser.nick)
                 .from(qArticle)
                 .join(qUser)
-                .on(qArticle.writer.eq(qUser.uid))
+                .on(qArticle.user.uid.eq(qUser.uid))
                 .where(expression)
                 .offset(pageable.getOffset())
                 .limit(pageable.getPageSize())
@@ -77,7 +77,7 @@ public class ArticleRepositoryImpl implements ArticleRepositoryCustom {
                         .select(qArticle.count())
                         .from(qArticle)
                         .join(qUser)
-                        .on(qArticle.writer.eq(qUser.uid))
+                        .on(qArticle.user.uid.eq(qUser.uid))
                         .where(expression)
                         .fetchOne();
 

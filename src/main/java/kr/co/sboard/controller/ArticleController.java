@@ -56,7 +56,13 @@ public class ArticleController {
     }
 
     @GetMapping("/article/view")
-    public String view(){
+    public String view(int no, Model model){
+
+        // 글 조회 서비스 호출
+        ArticleDTO asdfasdfasdfasdfasdf = articleService.findById(no);
+
+        model.addAttribute(asdfasdfasdfasdfasdf);
+
         return "/article/view";
     }
 

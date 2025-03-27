@@ -25,7 +25,6 @@ public class PageResponseDTO {
     private String searchType;
     private String keyword;
 
-
     @Builder
     public PageResponseDTO(PageRequestDTO pageRequestDTO, List<ArticleDTO> dtoList, int total){
         this.cate = pageRequestDTO.getCate();
