@@ -24,6 +24,19 @@ public class ArticleController {
     private final ArticleService articleService;
     private final FileService fileService;
 
+    @GetMapping("/article/search")
+    public String search(PageRequestDTO pageRequestDTO, Model model){
+        log.info("pageRequestDTO : {}", pageRequestDTO);
+
+        // 서비스 호출
+        PageResponseDTO pageResponseDTO = articleService.searchAll(pageRequestDTO);
+
+        model.addAttribute(pageResponseDTO);
+
+        return "/article/searchList";
+    }
+
+
     @GetMapping("/article/list")
     public String list(Model model, PageRequestDTO pageRequestDTO){
 
@@ -31,7 +44,6 @@ public class ArticleController {
         PageResponseDTO pageResponseDTO = articleService.findAll(pageRequestDTO);
 
         // 전체 글 조회 서비스 호출(Mybatis)
-
 
         model.addAttribute(pageResponseDTO);
 
