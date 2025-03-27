@@ -105,26 +105,18 @@ public class FileService {
         return fileDTOList;
     }
 
-    public FileDTO downloadFile(FileDTO fileDTO){
+    public void downloadFile(FileDTO fileDTO) throws IOException {
 
-        try{
-            // 파일 패스 정보객체 생성
-            Path path = Paths.get(uploadDir + java.io.File.separator + fileDTO.getSName());
+        // 파일 패스 정보객체 생성
+        Path path = Paths.get(uploadDir + java.io.File.separator + fileDTO.getSName());
 
-            // 파일 컨텐츠 타입 확인
-            String contentType = Files.probeContentType(path);
-            fileDTO.setContentType(contentType);
+        // 파일 컨텐츠 타입 확인
+        String contentType = Files.probeContentType(path);
+        fileDTO.setContentType(contentType);
 
-            // 파일 다운로드 스트림 작업으로 파일 자원 객체 생성
-            Resource resource = new InputStreamResource(Files.newInputStream(path));
-            fileDTO.setResource(resource);
-
-            return fileDTO;
-
-        }catch (Exception e){
-            log.error(e.getMessage());
-        }
-        return null;
+        // 파일 다운로드 스트림 작업으로 파일 자원 객체 생성
+        Resource resource = new InputStreamResource(Files.newInputStream(path));
+        fileDTO.setResource(resource);
     }
 
 

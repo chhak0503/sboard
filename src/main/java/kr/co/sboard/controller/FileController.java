@@ -10,6 +10,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
+import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 
 @Slf4j
@@ -23,25 +24,34 @@ public class FileController {
     @GetMapping("/file/download")
     public ResponseEntity download(int fno) {
 
-        // 파일 조회
-        FileDTO fileDTO = fileService.findById(fno);
+        try {
+            // 파일 조회
+            FileDTO fileDTO = fileService.findById(fno);
 
-        // 파일 자원 객체 생성
-        //FileDTO fileDTO = fileService.downloadFile(fileDTO);
+            fileService.downloadFile(fileDTO);
 
-        // 헤더정보
-        HttpHeaders headers = new HttpHeaders();
-        headers.setContentDisposition(
-                ContentDisposition.builder("attachment")
-                        .filename(fileDTO.getOName(), StandardCharsets.UTF_8)
-                        .build());
+            log.info("fileDTO : {}", fileDTO);
 
-        //headers.add(HttpHeaders.CONTENT_TYPE, contentType);
+            // 파일 다운로드 헤더 정보 설정
+            HttpHeaders headers = new HttpHeaders();
+            headers.setContentDisposition(
+                    ContentDisposition.builder("attachment")
+                            .filename(fileDTO.getOName(), StandardCharsets.UTF_8)
+                            .build());
 
+            headers.add(HttpHeaders.CONTENT_TYPE, fileDTO.getContentType());
 
+            return ResponseEntity.ok()
+                    .headers(headers)
+                    .body(fileDTO.getResource());
 
+        } catch (IOException e) {
+            log.error(e.getMessage());
+        }
+        return ResponseEntity
+                .notFound()
+                .build();
 
-        return null;
     }
 
 
