@@ -8,9 +8,13 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.ResponseBody;
+
+import java.util.List;
 
 @Slf4j
 @RequiredArgsConstructor
@@ -19,6 +23,14 @@ public class CommentController {
 
     private final CommentService commentService;
 
+    @ResponseBody
+    @GetMapping("/comment/list")
+    public List<CommentDTO> list(){
+
+        List<CommentDTO> commentDTOList = commentService.findAll();
+
+        return commentDTOList;
+    }
 
     @ResponseBody
     @PostMapping("/comment/write")
@@ -29,6 +41,7 @@ public class CommentController {
         commentDTO.setRegip(regip);
 
         CommentDTO savedCommentDTO = commentService.save(commentDTO);
+
 
         return savedCommentDTO;
     }

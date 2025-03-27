@@ -23,7 +23,12 @@ public class Comment {
 
     private int parent;
     private String content;
-    private String writer;
+
+    //private String writer;
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "writer")
+    private User user;
+
     private String regip;
 
     @CreationTimestamp

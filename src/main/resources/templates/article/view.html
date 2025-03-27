@@ -9,6 +9,34 @@
         document.addEventListener('DOMContentLoaded', function(){
 
             const formComment = document.formComment;
+            const commentList = document.getElementsByClassName('commentList')[0];
+            const empty = document.getElementsByClassName('empty')[0];
+
+            // 댓글 목록 출력
+            fetch('/comment/list')
+                .then(response => response.json())
+                .then(data => {
+                    console.log(data);
+
+                    empty.remove();
+
+                    data.forEach(comment => {
+                        // 동적 태그 생성
+                        const article = `<article>
+                                    <span class="nick">${comment.user.nick}</span>
+                                    <span class="date">${comment.wdate}</span>
+                                    <p class="content">${comment.content}</p>
+                                    <div>
+                                        <a href="#" class="remove">삭제</a>
+                                        <a href="#" class="modify">수정</a>
+                                    </div>
+                                </article>`;
+                        commentList.insertAdjacentHTML('beforeend', article);
+                    });
+                })
+                .catch(err => {
+                    console.log(err);
+                });
 
             // 댓글 등록
             formComment.onsubmit = async function(e){
@@ -28,14 +56,24 @@
 
                 const data = await response.json();
                 console.log(data);
+
+                // 동적 태그 생성
+                const article = `<article>
+                                    <span class="nick">${data.user.nick}</span>
+                                    <span class="date">${data.wdate}</span>
+                                    <p class="content">${data.content}</p>
+                                    <div>
+                                        <a href="#" class="remove">삭제</a>
+                                        <a href="#" class="modify">수정</a>
+                                    </div>
+                                </article>`;
+
+                this.comment.value = '';
+                empty.remove();
+                commentList.insertAdjacentHTML('beforeend', article);
             }
         });
-
-
-
-
     </script>
-
 </head>
 <body>
     <div id="wrapper">
@@ -78,20 +116,8 @@
 
                 <!-- 댓글목록 -->
                 <section class="commentList">
-                    <h3>댓글목록</h3>                   
-
-                    <article>
-                        <span class="nick">길동이</span>
-                        <span class="date">20-05-20</span>
-                        <p class="content">댓글 샘플 입니다.</p>                        
-                        <div>
-                            <a href="#" class="remove">삭제</a>
-                            <a href="#" class="modify">수정</a>
-                        </div>
-                    </article>
-
+                    <h3>댓글목록</h3>
                     <p class="empty">등록된 댓글이 없습니다.</p>
-
                 </section>
 
                 <!-- 댓글쓰기 -->
