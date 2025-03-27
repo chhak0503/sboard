@@ -21,9 +21,9 @@ public class CommentService {
     private final UserRepository userRepository;
     private final ModelMapper modelMapper;
 
-    public List<CommentDTO> findAll(){
+    public List<CommentDTO> findByParent(int parent){
 
-        List<Comment> commentList = commentRepository.findAll();
+        List<Comment> commentList = commentRepository.findByParent(parent);
 
         List<CommentDTO> commentDTOList = commentList.stream().map(entity -> {
             CommentDTO commentDTO = modelMapper.map(entity, CommentDTO.class);

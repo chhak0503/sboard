@@ -27,7 +27,7 @@ public class FileController {
         FileDTO fileDTO = fileService.findById(fno);
 
         // 파일 자원 객체 생성
-        fileService.downloadFile(fileDTO);
+        //FileDTO fileDTO = fileService.downloadFile(fileDTO);
 
         // 헤더정보
         HttpHeaders headers = new HttpHeaders();

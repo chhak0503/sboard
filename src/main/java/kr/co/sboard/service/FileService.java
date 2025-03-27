@@ -105,7 +105,7 @@ public class FileService {
         return fileDTOList;
     }
 
-    public Resource downloadFile(FileDTO fileDTO){
+    public FileDTO downloadFile(FileDTO fileDTO){
 
         try{
             // 파일 패스 정보객체 생성
@@ -117,8 +117,9 @@ public class FileService {
 
             // 파일 다운로드 스트림 작업으로 파일 자원 객체 생성
             Resource resource = new InputStreamResource(Files.newInputStream(path));
+            fileDTO.setResource(resource);
 
-            return resource;
+            return fileDTO;
 
         }catch (Exception e){
             log.error(e.getMessage());
@@ -126,9 +127,7 @@ public class FileService {
         return null;
     }
 
-    public void deleteFile(){
 
-    }
 
 
 }

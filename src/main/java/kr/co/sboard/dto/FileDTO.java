@@ -4,6 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.springframework.core.io.Resource;
 
 @Data
 @AllArgsConstructor
@@ -19,4 +20,5 @@ public class FileDTO {
 
     // 추가 필드
     private String contentType;
+    private Resource resource;
 }

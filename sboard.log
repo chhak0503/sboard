@@ -14721,3 +14721,584 @@ org.thymeleaf.exceptions.TemplateInputException: Error resolving template [comme
 2025-03-27T15:49:58.177+09:00  INFO 12068 --- [sboard] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
 2025-03-27T15:49:58.184+09:00  INFO 12068 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : Started SboardApplication in 3.002 seconds (process running for 1059.766)
 2025-03-27T15:49:58.188+09:00  INFO 12068 --- [sboard] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-03-27T15:59:27.761+09:00  INFO 12068 --- [sboard] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-27T15:59:27.762+09:00  INFO 12068 --- [sboard] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-03-27T15:59:27.768+09:00  INFO 12068 --- [sboard] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2025-03-27T15:59:30.068+09:00  WARN 12068 --- [sboard] [http-nio-8080-exec-2] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8080-exec-2][/user/login] Deprecated attribute {th:include,data-th-include} found in template /user/login, line 10, col 19. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2025-03-27T15:59:30.069+09:00  WARN 12068 --- [sboard] [http-nio-8080-exec-2] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-2][/user/login] Deprecated unwrapped fragment expression "/user/_head.html" found in template /user/login, line 10, col 19. Please use the complete syntax of fragment expressions instead ("~{/user/_head.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-03-27T15:59:30.073+09:00  WARN 12068 --- [sboard] [http-nio-8080-exec-2] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8080-exec-2][/user/login] Deprecated attribute {th:include,data-th-include} found in template /user/login, line 40, col 19. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2025-03-27T15:59:30.074+09:00  WARN 12068 --- [sboard] [http-nio-8080-exec-2] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-2][/user/login] Deprecated unwrapped fragment expression "/user/_tail.html" found in template /user/login, line 40, col 19. Please use the complete syntax of fragment expressions instead ("~{/user/_tail.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-03-27T15:59:37.328+09:00  WARN 12068 --- [sboard] [http-nio-8080-exec-7] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8080-exec-7][/user/login] Deprecated attribute {th:include,data-th-include} found in template /user/login, line 10, col 19. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2025-03-27T15:59:37.328+09:00  WARN 12068 --- [sboard] [http-nio-8080-exec-7] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-7][/user/login] Deprecated unwrapped fragment expression "/user/_head.html" found in template /user/login, line 10, col 19. Please use the complete syntax of fragment expressions instead ("~{/user/_head.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-03-27T15:59:37.331+09:00  WARN 12068 --- [sboard] [http-nio-8080-exec-7] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8080-exec-7][/user/login] Deprecated attribute {th:include,data-th-include} found in template /user/login, line 40, col 19. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2025-03-27T15:59:37.332+09:00  WARN 12068 --- [sboard] [http-nio-8080-exec-7] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-7][/user/login] Deprecated unwrapped fragment expression "/user/_tail.html" found in template /user/login, line 40, col 19. Please use the complete syntax of fragment expressions instead ("~{/user/_tail.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-03-27T15:59:41.247+09:00 TRACE 12068 --- [sboard] [http-nio-8080-exec-9] org.hibernate.orm.jdbc.bind              : binding parameter (1:INTEGER) <- [1]
+2025-03-27T15:59:41.328+09:00  WARN 12068 --- [sboard] [http-nio-8080-exec-9] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8080-exec-9][/user/terms] Deprecated attribute {th:include,data-th-include} found in template /user/terms, line 10, col 19. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2025-03-27T15:59:41.329+09:00  WARN 12068 --- [sboard] [http-nio-8080-exec-9] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-9][/user/terms] Deprecated unwrapped fragment expression "/user/_head.html" found in template /user/terms, line 10, col 19. Please use the complete syntax of fragment expressions instead ("~{/user/_head.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-03-27T15:59:41.345+09:00  WARN 12068 --- [sboard] [http-nio-8080-exec-9] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8080-exec-9][/user/terms] Deprecated attribute {th:include,data-th-include} found in template /user/terms, line 40, col 19. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2025-03-27T15:59:41.346+09:00  WARN 12068 --- [sboard] [http-nio-8080-exec-9] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-9][/user/terms] Deprecated unwrapped fragment expression "/user/_tail.html" found in template /user/terms, line 40, col 19. Please use the complete syntax of fragment expressions instead ("~{/user/_tail.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-03-27T16:02:35.856+09:00  WARN 12068 --- [sboard] [http-nio-8080-exec-4] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8080-exec-4][/user/login] Deprecated attribute {th:include,data-th-include} found in template /user/login, line 10, col 19. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2025-03-27T16:02:35.856+09:00  WARN 12068 --- [sboard] [http-nio-8080-exec-4] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-4][/user/login] Deprecated unwrapped fragment expression "/user/_head.html" found in template /user/login, line 10, col 19. Please use the complete syntax of fragment expressions instead ("~{/user/_head.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-03-27T16:02:35.859+09:00  WARN 12068 --- [sboard] [http-nio-8080-exec-4] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8080-exec-4][/user/login] Deprecated attribute {th:include,data-th-include} found in template /user/login, line 40, col 19. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2025-03-27T16:02:35.859+09:00  WARN 12068 --- [sboard] [http-nio-8080-exec-4] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-4][/user/login] Deprecated unwrapped fragment expression "/user/_tail.html" found in template /user/login, line 40, col 19. Please use the complete syntax of fragment expressions instead ("~{/user/_tail.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-03-27T16:11:03.289+09:00  INFO 12068 --- [sboard] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 3 class path changes (0 additions, 3 deletions, 0 modifications)
+2025-03-27T16:11:03.292+09:00  INFO 12068 --- [sboard] [Thread-95] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-27T16:11:03.448+09:00  INFO 12068 --- [sboard] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-27T16:11:03.451+09:00  INFO 12068 --- [sboard] [Thread-95] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-27T16:11:03.451+09:00  INFO 12068 --- [sboard] [Thread-95] com.zaxxer.hikari.HikariDataSource       : HikariPool-24 - Shutdown initiated...
+2025-03-27T16:11:03.554+09:00  INFO 12068 --- [sboard] [Thread-95] com.zaxxer.hikari.HikariDataSource       : HikariPool-24 - Shutdown completed.
+2025-03-27T16:11:03.756+09:00  INFO 12068 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : Starting SboardApplication v0.0.6-SNAPSHOT using Java 17.0.12 with PID 12068 (C:\Users\lotte6\Desktop\workspace\sboard\build\classes\java\main started by lotte6 in C:\Users\lotte6\Desktop\workspace\sboard)
+2025-03-27T16:11:03.757+09:00  INFO 12068 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : No active profile set, falling back to 1 default profile: "default"
+2025-03-27T16:11:04.183+09:00  INFO 12068 --- [sboard] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-27T16:11:04.234+09:00  INFO 12068 --- [sboard] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 49 ms. Found 5 JPA repository interfaces.
+2025-03-27T16:11:04.587+09:00  INFO 12068 --- [sboard] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-03-27T16:11:04.589+09:00  INFO 12068 --- [sboard] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-27T16:11:04.590+09:00  INFO 12068 --- [sboard] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-03-27T16:11:04.621+09:00  INFO 12068 --- [sboard] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-27T16:11:04.622+09:00  INFO 12068 --- [sboard] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 862 ms
+2025-03-27T16:11:04.734+09:00  INFO 12068 --- [sboard] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-27T16:11:04.738+09:00  INFO 12068 --- [sboard] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-27T16:11:04.755+09:00  INFO 12068 --- [sboard] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-27T16:11:04.758+09:00  INFO 12068 --- [sboard] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-25 - Starting...
+2025-03-27T16:11:09.407+09:00  INFO 12068 --- [sboard] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-25 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3b6818f8
+2025-03-27T16:11:09.408+09:00  INFO 12068 --- [sboard] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-25 - Start completed.
+2025-03-27T16:11:09.418+09:00  WARN 12068 --- [sboard] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-27T16:11:09.419+09:00  INFO 12068 --- [sboard] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-25)']
+	Database driver: undefined/unknown
+	Database version: 8.4.4
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-27T16:11:09.548+09:00  INFO 12068 --- [sboard] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-27T16:11:09.549+09:00  INFO 12068 --- [sboard] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-27T16:11:09.908+09:00  WARN 12068 --- [sboard] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-27T16:11:09.950+09:00  INFO 12068 --- [sboard] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name myUserDetailsService
+2025-03-27T16:11:10.570+09:00  INFO 12068 --- [sboard] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-03-27T16:11:10.598+09:00  INFO 12068 --- [sboard] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-03-27T16:11:10.606+09:00  INFO 12068 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : Started SboardApplication in 6.901 seconds (process running for 2332.188)
+2025-03-27T16:11:10.609+09:00  INFO 12068 --- [sboard] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-03-27T16:11:12.043+09:00  INFO 12068 --- [sboard] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 3 class path changes (3 additions, 0 deletions, 0 modifications)
+2025-03-27T16:11:12.045+09:00  INFO 12068 --- [sboard] [Thread-99] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-27T16:11:12.194+09:00  INFO 12068 --- [sboard] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-27T16:11:12.197+09:00  INFO 12068 --- [sboard] [Thread-99] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-27T16:11:12.197+09:00  INFO 12068 --- [sboard] [Thread-99] com.zaxxer.hikari.HikariDataSource       : HikariPool-25 - Shutdown initiated...
+2025-03-27T16:11:12.295+09:00  INFO 12068 --- [sboard] [Thread-99] com.zaxxer.hikari.HikariDataSource       : HikariPool-25 - Shutdown completed.
+2025-03-27T16:11:12.469+09:00  INFO 12068 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : Starting SboardApplication v0.0.6-SNAPSHOT using Java 17.0.12 with PID 12068 (C:\Users\lotte6\Desktop\workspace\sboard\build\classes\java\main started by lotte6 in C:\Users\lotte6\Desktop\workspace\sboard)
+2025-03-27T16:11:12.469+09:00  INFO 12068 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : No active profile set, falling back to 1 default profile: "default"
+2025-03-27T16:11:12.865+09:00  INFO 12068 --- [sboard] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-27T16:11:12.913+09:00  INFO 12068 --- [sboard] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 45 ms. Found 5 JPA repository interfaces.
+2025-03-27T16:11:13.173+09:00  INFO 12068 --- [sboard] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-03-27T16:11:13.174+09:00  INFO 12068 --- [sboard] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-27T16:11:13.175+09:00  INFO 12068 --- [sboard] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-03-27T16:11:13.205+09:00  INFO 12068 --- [sboard] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-27T16:11:13.205+09:00  INFO 12068 --- [sboard] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 733 ms
+2025-03-27T16:11:13.317+09:00  INFO 12068 --- [sboard] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-27T16:11:13.322+09:00  INFO 12068 --- [sboard] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-27T16:11:13.337+09:00  INFO 12068 --- [sboard] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-27T16:11:13.339+09:00  INFO 12068 --- [sboard] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-26 - Starting...
+2025-03-27T16:11:13.452+09:00  INFO 12068 --- [sboard] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-26 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5e0f9c80
+2025-03-27T16:11:13.452+09:00  INFO 12068 --- [sboard] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-26 - Start completed.
+2025-03-27T16:11:13.464+09:00  WARN 12068 --- [sboard] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-27T16:11:13.464+09:00  INFO 12068 --- [sboard] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-26)']
+	Database driver: undefined/unknown
+	Database version: 8.4.4
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-27T16:11:13.604+09:00  INFO 12068 --- [sboard] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-27T16:11:13.605+09:00  INFO 12068 --- [sboard] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-27T16:11:14.019+09:00  WARN 12068 --- [sboard] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-27T16:11:14.064+09:00  INFO 12068 --- [sboard] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name myUserDetailsService
+2025-03-27T16:11:14.589+09:00  INFO 12068 --- [sboard] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-03-27T16:11:14.620+09:00  INFO 12068 --- [sboard] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-03-27T16:11:14.628+09:00  INFO 12068 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : Started SboardApplication in 2.205 seconds (process running for 2336.21)
+2025-03-27T16:11:14.631+09:00  INFO 12068 --- [sboard] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-03-27T16:14:22.052+09:00  INFO 12068 --- [sboard] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 11 class path changes (0 additions, 11 deletions, 0 modifications)
+2025-03-27T16:14:22.055+09:00  INFO 12068 --- [sboard] [Thread-103] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-27T16:14:22.229+09:00  INFO 12068 --- [sboard] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-27T16:14:22.232+09:00  INFO 12068 --- [sboard] [Thread-103] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-27T16:14:22.233+09:00  INFO 12068 --- [sboard] [Thread-103] com.zaxxer.hikari.HikariDataSource       : HikariPool-26 - Shutdown initiated...
+2025-03-27T16:14:22.344+09:00  INFO 12068 --- [sboard] [Thread-103] com.zaxxer.hikari.HikariDataSource       : HikariPool-26 - Shutdown completed.
+2025-03-27T16:14:22.556+09:00  INFO 12068 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : Starting SboardApplication v0.0.6-SNAPSHOT using Java 17.0.12 with PID 12068 (C:\Users\lotte6\Desktop\workspace\sboard\build\classes\java\main started by lotte6 in C:\Users\lotte6\Desktop\workspace\sboard)
+2025-03-27T16:14:22.556+09:00  INFO 12068 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : No active profile set, falling back to 1 default profile: "default"
+2025-03-27T16:14:23.021+09:00  INFO 12068 --- [sboard] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-27T16:14:23.075+09:00  INFO 12068 --- [sboard] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 53 ms. Found 5 JPA repository interfaces.
+2025-03-27T16:14:23.229+09:00  WARN 12068 --- [sboard] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[kr.co.sboard]' package. Please check your configuration.
+2025-03-27T16:14:23.455+09:00  INFO 12068 --- [sboard] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-03-27T16:14:23.457+09:00  INFO 12068 --- [sboard] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-27T16:14:23.458+09:00  INFO 12068 --- [sboard] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-03-27T16:14:23.492+09:00  INFO 12068 --- [sboard] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-27T16:14:23.492+09:00  INFO 12068 --- [sboard] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 932 ms
+2025-03-27T16:14:23.622+09:00  INFO 12068 --- [sboard] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-27T16:14:23.630+09:00  INFO 12068 --- [sboard] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-27T16:14:23.648+09:00  INFO 12068 --- [sboard] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-27T16:14:23.651+09:00  INFO 12068 --- [sboard] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-27 - Starting...
+2025-03-27T16:14:23.791+09:00  INFO 12068 --- [sboard] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-27 - Added connection com.mysql.cj.jdbc.ConnectionImpl@71d2c7f1
+2025-03-27T16:14:23.791+09:00  INFO 12068 --- [sboard] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-27 - Start completed.
+2025-03-27T16:14:23.806+09:00  WARN 12068 --- [sboard] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-27T16:14:23.807+09:00  INFO 12068 --- [sboard] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-27)']
+	Database driver: undefined/unknown
+	Database version: 8.4.4
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-27T16:14:23.944+09:00  INFO 12068 --- [sboard] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-27T16:14:23.944+09:00  INFO 12068 --- [sboard] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-27T16:14:24.251+09:00  WARN 12068 --- [sboard] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-27T16:14:24.297+09:00  INFO 12068 --- [sboard] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name myUserDetailsService
+2025-03-27T16:14:25.038+09:00  INFO 12068 --- [sboard] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-03-27T16:14:25.074+09:00  INFO 12068 --- [sboard] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-03-27T16:14:25.082+09:00  INFO 12068 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : Started SboardApplication in 2.579 seconds (process running for 2526.663)
+2025-03-27T16:14:25.086+09:00  INFO 12068 --- [sboard] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-03-27T16:14:26.510+09:00  INFO 12068 --- [sboard] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 11 class path changes (11 additions, 0 deletions, 0 modifications)
+2025-03-27T16:14:26.513+09:00  INFO 12068 --- [sboard] [Thread-107] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-27T16:14:26.705+09:00  INFO 12068 --- [sboard] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-27T16:14:26.707+09:00  INFO 12068 --- [sboard] [Thread-107] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-27T16:14:26.708+09:00  INFO 12068 --- [sboard] [Thread-107] com.zaxxer.hikari.HikariDataSource       : HikariPool-27 - Shutdown initiated...
+2025-03-27T16:14:26.816+09:00  INFO 12068 --- [sboard] [Thread-107] com.zaxxer.hikari.HikariDataSource       : HikariPool-27 - Shutdown completed.
+2025-03-27T16:14:27.052+09:00  INFO 12068 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : Starting SboardApplication v0.0.6-SNAPSHOT using Java 17.0.12 with PID 12068 (C:\Users\lotte6\Desktop\workspace\sboard\build\classes\java\main started by lotte6 in C:\Users\lotte6\Desktop\workspace\sboard)
+2025-03-27T16:14:27.052+09:00  INFO 12068 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : No active profile set, falling back to 1 default profile: "default"
+2025-03-27T16:14:27.445+09:00  INFO 12068 --- [sboard] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-27T16:14:27.491+09:00  INFO 12068 --- [sboard] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44 ms. Found 5 JPA repository interfaces.
+2025-03-27T16:14:27.764+09:00  INFO 12068 --- [sboard] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-03-27T16:14:27.765+09:00  INFO 12068 --- [sboard] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-27T16:14:27.765+09:00  INFO 12068 --- [sboard] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-03-27T16:14:27.802+09:00  INFO 12068 --- [sboard] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-27T16:14:27.802+09:00  INFO 12068 --- [sboard] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 747 ms
+2025-03-27T16:14:27.911+09:00  INFO 12068 --- [sboard] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-27T16:14:27.917+09:00  INFO 12068 --- [sboard] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-27T16:14:27.931+09:00  INFO 12068 --- [sboard] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-27T16:14:27.932+09:00  INFO 12068 --- [sboard] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-28 - Starting...
+2025-03-27T16:14:28.063+09:00  INFO 12068 --- [sboard] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-28 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6882f2
+2025-03-27T16:14:28.064+09:00  INFO 12068 --- [sboard] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-28 - Start completed.
+2025-03-27T16:14:28.079+09:00  WARN 12068 --- [sboard] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-27T16:14:28.080+09:00  INFO 12068 --- [sboard] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-28)']
+	Database driver: undefined/unknown
+	Database version: 8.4.4
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-27T16:14:28.208+09:00  INFO 12068 --- [sboard] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-27T16:14:28.208+09:00  INFO 12068 --- [sboard] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-27T16:14:28.577+09:00  WARN 12068 --- [sboard] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-27T16:14:28.616+09:00  INFO 12068 --- [sboard] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name myUserDetailsService
+2025-03-27T16:14:29.159+09:00  INFO 12068 --- [sboard] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-03-27T16:14:29.183+09:00  INFO 12068 --- [sboard] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-03-27T16:14:29.191+09:00  INFO 12068 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : Started SboardApplication in 2.184 seconds (process running for 2530.772)
+2025-03-27T16:14:29.193+09:00  INFO 12068 --- [sboard] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-03-27T16:16:11.231+09:00  INFO 12068 --- [sboard] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 32 class path changes (0 additions, 31 deletions, 1 modification)
+2025-03-27T16:16:11.235+09:00  INFO 12068 --- [sboard] [Thread-111] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-27T16:16:11.389+09:00  INFO 12068 --- [sboard] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-27T16:16:11.391+09:00  INFO 12068 --- [sboard] [Thread-111] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-27T16:16:11.392+09:00  INFO 12068 --- [sboard] [Thread-111] com.zaxxer.hikari.HikariDataSource       : HikariPool-28 - Shutdown initiated...
+2025-03-27T16:16:11.495+09:00  INFO 12068 --- [sboard] [Thread-111] com.zaxxer.hikari.HikariDataSource       : HikariPool-28 - Shutdown completed.
+2025-03-27T16:16:11.708+09:00  INFO 12068 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : Starting SboardApplication v1.0.0-RELEASE using Java 17.0.12 with PID 12068 (C:\Users\lotte6\Desktop\workspace\sboard\build\classes\java\main started by lotte6 in C:\Users\lotte6\Desktop\workspace\sboard)
+2025-03-27T16:16:11.708+09:00  INFO 12068 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : No active profile set, falling back to 1 default profile: "default"
+2025-03-27T16:16:12.258+09:00  INFO 12068 --- [sboard] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-27T16:16:12.296+09:00  INFO 12068 --- [sboard] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 36 ms. Found 5 JPA repository interfaces.
+2025-03-27T16:16:12.543+09:00  INFO 12068 --- [sboard] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-03-27T16:16:12.544+09:00  INFO 12068 --- [sboard] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-27T16:16:12.544+09:00  INFO 12068 --- [sboard] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-03-27T16:16:12.581+09:00  INFO 12068 --- [sboard] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-27T16:16:12.582+09:00  INFO 12068 --- [sboard] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 870 ms
+2025-03-27T16:16:12.680+09:00  INFO 12068 --- [sboard] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-27T16:16:12.685+09:00  INFO 12068 --- [sboard] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-27T16:16:12.696+09:00  INFO 12068 --- [sboard] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-27T16:16:12.698+09:00  INFO 12068 --- [sboard] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-29 - Starting...
+2025-03-27T16:16:17.376+09:00  INFO 12068 --- [sboard] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-29 - Added connection com.mysql.cj.jdbc.ConnectionImpl@795b8a3b
+2025-03-27T16:16:17.377+09:00  INFO 12068 --- [sboard] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-29 - Start completed.
+2025-03-27T16:16:17.388+09:00  WARN 12068 --- [sboard] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-27T16:16:17.388+09:00  INFO 12068 --- [sboard] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-29)']
+	Database driver: undefined/unknown
+	Database version: 8.4.4
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-27T16:16:17.504+09:00  INFO 12068 --- [sboard] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-27T16:16:17.505+09:00  INFO 12068 --- [sboard] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-27T16:16:17.856+09:00  WARN 12068 --- [sboard] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-27T16:16:17.892+09:00  INFO 12068 --- [sboard] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name myUserDetailsService
+2025-03-27T16:16:18.408+09:00  INFO 12068 --- [sboard] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-03-27T16:16:18.439+09:00  INFO 12068 --- [sboard] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-03-27T16:16:18.447+09:00  INFO 12068 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : Started SboardApplication in 6.784 seconds (process running for 2640.029)
+2025-03-27T16:16:18.451+09:00  INFO 12068 --- [sboard] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-03-27T16:16:19.891+09:00  INFO 12068 --- [sboard] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 32 class path changes (31 additions, 0 deletions, 1 modification)
+2025-03-27T16:16:19.894+09:00  INFO 12068 --- [sboard] [Thread-115] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-27T16:16:20.035+09:00  INFO 12068 --- [sboard] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-27T16:16:20.038+09:00  INFO 12068 --- [sboard] [Thread-115] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-27T16:16:20.039+09:00  INFO 12068 --- [sboard] [Thread-115] com.zaxxer.hikari.HikariDataSource       : HikariPool-29 - Shutdown initiated...
+2025-03-27T16:16:20.141+09:00  INFO 12068 --- [sboard] [Thread-115] com.zaxxer.hikari.HikariDataSource       : HikariPool-29 - Shutdown completed.
+2025-03-27T16:16:20.332+09:00  INFO 12068 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : Starting SboardApplication v1.0.0-RELEASE using Java 17.0.12 with PID 12068 (C:\Users\lotte6\Desktop\workspace\sboard\build\classes\java\main started by lotte6 in C:\Users\lotte6\Desktop\workspace\sboard)
+2025-03-27T16:16:20.332+09:00  INFO 12068 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : No active profile set, falling back to 1 default profile: "default"
+2025-03-27T16:16:20.717+09:00  INFO 12068 --- [sboard] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-27T16:16:20.771+09:00  INFO 12068 --- [sboard] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52 ms. Found 5 JPA repository interfaces.
+2025-03-27T16:16:21.092+09:00  INFO 12068 --- [sboard] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-03-27T16:16:21.093+09:00  INFO 12068 --- [sboard] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-27T16:16:21.094+09:00  INFO 12068 --- [sboard] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-03-27T16:16:21.126+09:00  INFO 12068 --- [sboard] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-27T16:16:21.126+09:00  INFO 12068 --- [sboard] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 791 ms
+2025-03-27T16:16:21.244+09:00  INFO 12068 --- [sboard] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-27T16:16:21.250+09:00  INFO 12068 --- [sboard] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-27T16:16:21.266+09:00  INFO 12068 --- [sboard] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-27T16:16:21.268+09:00  INFO 12068 --- [sboard] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-30 - Starting...
+2025-03-27T16:16:21.376+09:00  INFO 12068 --- [sboard] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-30 - Added connection com.mysql.cj.jdbc.ConnectionImpl@41e10e0
+2025-03-27T16:16:21.376+09:00  INFO 12068 --- [sboard] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-30 - Start completed.
+2025-03-27T16:16:21.388+09:00  WARN 12068 --- [sboard] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-27T16:16:21.389+09:00  INFO 12068 --- [sboard] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-30)']
+	Database driver: undefined/unknown
+	Database version: 8.4.4
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-27T16:16:21.534+09:00  INFO 12068 --- [sboard] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-27T16:16:21.534+09:00  INFO 12068 --- [sboard] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-27T16:16:21.990+09:00  WARN 12068 --- [sboard] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-27T16:16:22.034+09:00  INFO 12068 --- [sboard] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name myUserDetailsService
+2025-03-27T16:16:22.736+09:00  INFO 12068 --- [sboard] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-03-27T16:16:22.774+09:00  INFO 12068 --- [sboard] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-03-27T16:16:22.784+09:00  INFO 12068 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : Started SboardApplication in 2.494 seconds (process running for 2644.365)
+2025-03-27T16:16:22.789+09:00  INFO 12068 --- [sboard] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-03-27T16:17:13.903+09:00  INFO 12068 --- [sboard] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-27T16:17:14.049+09:00  INFO 12068 --- [sboard] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-27T16:17:14.052+09:00  INFO 12068 --- [sboard] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-27T16:17:14.053+09:00  INFO 12068 --- [sboard] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-30 - Shutdown initiated...
+2025-03-27T16:17:14.156+09:00  INFO 12068 --- [sboard] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-30 - Shutdown completed.
+2025-03-27T16:17:18.942+09:00  INFO 16360 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : Starting SboardApplication v1.0.0-RELEASE using Java 17.0.12 with PID 16360 (C:\Users\lotte6\Desktop\workspace\sboard\build\classes\java\main started by lotte6 in C:\Users\lotte6\Desktop\workspace\sboard)
+2025-03-27T16:17:18.947+09:00  INFO 16360 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : No active profile set, falling back to 1 default profile: "default"
+2025-03-27T16:17:19.025+09:00  INFO 16360 --- [sboard] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-03-27T16:17:19.026+09:00  INFO 16360 --- [sboard] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-03-27T16:17:20.567+09:00  INFO 16360 --- [sboard] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-27T16:17:20.737+09:00  INFO 16360 --- [sboard] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 151 ms. Found 5 JPA repository interfaces.
+2025-03-27T16:17:22.170+09:00  INFO 16360 --- [sboard] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-03-27T16:17:22.197+09:00  INFO 16360 --- [sboard] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-27T16:17:22.198+09:00  INFO 16360 --- [sboard] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-03-27T16:17:22.276+09:00  INFO 16360 --- [sboard] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-27T16:17:22.277+09:00  INFO 16360 --- [sboard] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3250 ms
+2025-03-27T16:17:22.663+09:00  INFO 16360 --- [sboard] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-27T16:17:22.757+09:00  INFO 16360 --- [sboard] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-03-27T16:17:22.821+09:00  INFO 16360 --- [sboard] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-27T16:17:23.404+09:00  INFO 16360 --- [sboard] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-27T16:17:23.473+09:00  INFO 16360 --- [sboard] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-27T16:17:24.105+09:00  INFO 16360 --- [sboard] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1ae3bb79
+2025-03-27T16:17:24.110+09:00  INFO 16360 --- [sboard] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-27T16:17:24.231+09:00  WARN 16360 --- [sboard] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-27T16:17:24.269+09:00  INFO 16360 --- [sboard] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.4.4
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-27T16:17:26.434+09:00  INFO 16360 --- [sboard] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-27T16:17:26.441+09:00  INFO 16360 --- [sboard] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-27T16:17:28.010+09:00  WARN 16360 --- [sboard] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-27T16:17:28.111+09:00  INFO 16360 --- [sboard] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name myUserDetailsService
+2025-03-27T16:17:29.503+09:00  INFO 16360 --- [sboard] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-03-27T16:17:29.583+09:00  INFO 16360 --- [sboard] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-03-27T16:17:29.601+09:00  INFO 16360 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : Started SboardApplication in 11.518 seconds (process running for 12.723)
+2025-03-27T16:17:39.351+09:00  INFO 16360 --- [sboard] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 32 class path changes (0 additions, 0 deletions, 32 modifications)
+2025-03-27T16:17:39.357+09:00  INFO 16360 --- [sboard] [Thread-5] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-27T16:17:39.505+09:00  INFO 16360 --- [sboard] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-27T16:17:39.513+09:00  INFO 16360 --- [sboard] [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-27T16:17:39.521+09:00  INFO 16360 --- [sboard] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-27T16:17:39.635+09:00  INFO 16360 --- [sboard] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-27T16:17:39.922+09:00  INFO 16360 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : Starting SboardApplication v1.0.0-RELEASE using Java 17.0.12 with PID 16360 (C:\Users\lotte6\Desktop\workspace\sboard\build\classes\java\main started by lotte6 in C:\Users\lotte6\Desktop\workspace\sboard)
+2025-03-27T16:17:39.923+09:00  INFO 16360 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : No active profile set, falling back to 1 default profile: "default"
+2025-03-27T16:17:40.370+09:00  INFO 16360 --- [sboard] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-27T16:17:40.417+09:00  INFO 16360 --- [sboard] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 45 ms. Found 5 JPA repository interfaces.
+2025-03-27T16:17:40.714+09:00  INFO 16360 --- [sboard] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-03-27T16:17:40.716+09:00  INFO 16360 --- [sboard] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-27T16:17:40.716+09:00  INFO 16360 --- [sboard] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-03-27T16:17:40.748+09:00  INFO 16360 --- [sboard] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-27T16:17:40.749+09:00  INFO 16360 --- [sboard] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 822 ms
+2025-03-27T16:17:40.857+09:00  INFO 16360 --- [sboard] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-27T16:17:40.865+09:00  INFO 16360 --- [sboard] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-27T16:17:40.887+09:00  INFO 16360 --- [sboard] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-27T16:17:40.890+09:00  INFO 16360 --- [sboard] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2025-03-27T16:17:41.035+09:00  INFO 16360 --- [sboard] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6e0553da
+2025-03-27T16:17:41.036+09:00  INFO 16360 --- [sboard] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2025-03-27T16:17:41.051+09:00  WARN 16360 --- [sboard] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-27T16:17:41.052+09:00  INFO 16360 --- [sboard] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 8.4.4
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-27T16:17:41.232+09:00  INFO 16360 --- [sboard] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-27T16:17:41.233+09:00  INFO 16360 --- [sboard] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-27T16:17:41.668+09:00  WARN 16360 --- [sboard] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-27T16:17:41.712+09:00  INFO 16360 --- [sboard] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name myUserDetailsService
+2025-03-27T16:17:42.338+09:00  INFO 16360 --- [sboard] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-03-27T16:17:42.372+09:00  INFO 16360 --- [sboard] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-03-27T16:17:42.380+09:00  INFO 16360 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : Started SboardApplication in 2.52 seconds (process running for 25.503)
+2025-03-27T16:17:42.387+09:00  INFO 16360 --- [sboard] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-03-27T16:18:50.729+09:00  INFO 16360 --- [sboard] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2025-03-27T16:18:50.732+09:00  INFO 16360 --- [sboard] [Thread-7] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-27T16:18:50.932+09:00  INFO 16360 --- [sboard] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-27T16:18:50.937+09:00  INFO 16360 --- [sboard] [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-27T16:18:50.938+09:00  INFO 16360 --- [sboard] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2025-03-27T16:18:51.060+09:00  INFO 16360 --- [sboard] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2025-03-27T16:18:51.256+09:00  INFO 16360 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : Starting SboardApplication v1.0.0-RELEASE using Java 17.0.12 with PID 16360 (C:\Users\lotte6\Desktop\workspace\sboard\build\classes\java\main started by lotte6 in C:\Users\lotte6\Desktop\workspace\sboard)
+2025-03-27T16:18:51.257+09:00  INFO 16360 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : No active profile set, falling back to 1 default profile: "default"
+2025-03-27T16:18:51.729+09:00  INFO 16360 --- [sboard] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-27T16:18:51.791+09:00  INFO 16360 --- [sboard] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 59 ms. Found 5 JPA repository interfaces.
+2025-03-27T16:18:52.146+09:00  INFO 16360 --- [sboard] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-03-27T16:18:52.148+09:00  INFO 16360 --- [sboard] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-27T16:18:52.148+09:00  INFO 16360 --- [sboard] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-03-27T16:18:52.176+09:00  INFO 16360 --- [sboard] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-27T16:18:52.177+09:00  INFO 16360 --- [sboard] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 916 ms
+2025-03-27T16:18:52.301+09:00  INFO 16360 --- [sboard] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-27T16:18:52.308+09:00  INFO 16360 --- [sboard] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-27T16:18:52.326+09:00  INFO 16360 --- [sboard] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-27T16:18:52.329+09:00  INFO 16360 --- [sboard] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2025-03-27T16:18:52.449+09:00  INFO 16360 --- [sboard] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3bf37294
+2025-03-27T16:18:52.450+09:00  INFO 16360 --- [sboard] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2025-03-27T16:18:52.462+09:00  WARN 16360 --- [sboard] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-27T16:18:52.462+09:00  INFO 16360 --- [sboard] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-3)']
+	Database driver: undefined/unknown
+	Database version: 8.4.4
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-27T16:18:52.631+09:00  INFO 16360 --- [sboard] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-27T16:18:52.631+09:00  INFO 16360 --- [sboard] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-27T16:18:53.069+09:00  WARN 16360 --- [sboard] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-27T16:18:53.119+09:00  INFO 16360 --- [sboard] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name myUserDetailsService
+2025-03-27T16:18:53.724+09:00  INFO 16360 --- [sboard] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-03-27T16:18:53.755+09:00  INFO 16360 --- [sboard] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-03-27T16:18:53.760+09:00  INFO 16360 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : Started SboardApplication in 2.571 seconds (process running for 96.883)
+2025-03-27T16:18:53.762+09:00  INFO 16360 --- [sboard] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-03-27T16:18:55.206+09:00  INFO 16360 --- [sboard] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2025-03-27T16:18:55.209+09:00  INFO 16360 --- [sboard] [Thread-11] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-27T16:18:55.375+09:00  INFO 16360 --- [sboard] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-27T16:18:55.378+09:00  INFO 16360 --- [sboard] [Thread-11] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-27T16:18:55.379+09:00  INFO 16360 --- [sboard] [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2025-03-27T16:18:55.489+09:00  INFO 16360 --- [sboard] [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2025-03-27T16:18:55.702+09:00  INFO 16360 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : Starting SboardApplication v1.0.0-RELEASE using Java 17.0.12 with PID 16360 (C:\Users\lotte6\Desktop\workspace\sboard\build\classes\java\main started by lotte6 in C:\Users\lotte6\Desktop\workspace\sboard)
+2025-03-27T16:18:55.703+09:00  INFO 16360 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : No active profile set, falling back to 1 default profile: "default"
+2025-03-27T16:18:56.123+09:00  INFO 16360 --- [sboard] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-27T16:18:56.172+09:00  INFO 16360 --- [sboard] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 45 ms. Found 5 JPA repository interfaces.
+2025-03-27T16:18:56.470+09:00  INFO 16360 --- [sboard] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-03-27T16:18:56.472+09:00  INFO 16360 --- [sboard] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-27T16:18:56.473+09:00  INFO 16360 --- [sboard] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-03-27T16:18:56.506+09:00  INFO 16360 --- [sboard] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-27T16:18:56.507+09:00  INFO 16360 --- [sboard] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 801 ms
+2025-03-27T16:18:56.637+09:00  INFO 16360 --- [sboard] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-27T16:18:56.644+09:00  INFO 16360 --- [sboard] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-27T16:18:56.662+09:00  INFO 16360 --- [sboard] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-27T16:18:56.666+09:00  INFO 16360 --- [sboard] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2025-03-27T16:18:56.788+09:00  INFO 16360 --- [sboard] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@58911efd
+2025-03-27T16:18:56.789+09:00  INFO 16360 --- [sboard] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2025-03-27T16:18:56.802+09:00  WARN 16360 --- [sboard] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-27T16:18:56.802+09:00  INFO 16360 --- [sboard] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-4)']
+	Database driver: undefined/unknown
+	Database version: 8.4.4
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-27T16:18:56.981+09:00  INFO 16360 --- [sboard] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-27T16:18:56.982+09:00  INFO 16360 --- [sboard] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-27T16:18:57.451+09:00  WARN 16360 --- [sboard] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-27T16:18:57.498+09:00  INFO 16360 --- [sboard] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name myUserDetailsService
+2025-03-27T16:18:58.162+09:00  INFO 16360 --- [sboard] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-03-27T16:18:58.194+09:00  INFO 16360 --- [sboard] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-03-27T16:18:58.203+09:00  INFO 16360 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : Started SboardApplication in 2.563 seconds (process running for 101.325)
+2025-03-27T16:18:58.207+09:00  INFO 16360 --- [sboard] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-03-27T16:20:06.010+09:00  INFO 16360 --- [sboard] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-27T16:20:06.155+09:00  INFO 16360 --- [sboard] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-27T16:20:06.159+09:00  INFO 16360 --- [sboard] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-27T16:20:06.160+09:00  INFO 16360 --- [sboard] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2025-03-27T16:20:06.267+09:00  INFO 16360 --- [sboard] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2025-03-27T16:20:13.310+09:00  INFO 17220 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : Starting SboardApplication v1.0.0-RELEASE using Java 17.0.12 with PID 17220 (C:\Users\lotte6\Desktop\workspace\sboard\build\classes\java\main started by lotte6 in C:\Users\lotte6\Desktop\workspace\sboard)
+2025-03-27T16:20:13.315+09:00  INFO 17220 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : No active profile set, falling back to 1 default profile: "default"
+2025-03-27T16:20:13.397+09:00  INFO 17220 --- [sboard] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-03-27T16:20:13.398+09:00  INFO 17220 --- [sboard] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-03-27T16:20:14.975+09:00  INFO 17220 --- [sboard] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-27T16:20:15.121+09:00  INFO 17220 --- [sboard] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 128 ms. Found 5 JPA repository interfaces.
+2025-03-27T16:20:16.550+09:00  INFO 17220 --- [sboard] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-03-27T16:20:16.577+09:00  INFO 17220 --- [sboard] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-27T16:20:16.578+09:00  INFO 17220 --- [sboard] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-03-27T16:20:16.662+09:00  INFO 17220 --- [sboard] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-27T16:20:16.663+09:00  INFO 17220 --- [sboard] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3262 ms
+2025-03-27T16:20:17.079+09:00  INFO 17220 --- [sboard] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-27T16:20:17.169+09:00  INFO 17220 --- [sboard] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-03-27T16:20:17.236+09:00  INFO 17220 --- [sboard] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-27T16:20:17.762+09:00  INFO 17220 --- [sboard] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-27T16:20:17.829+09:00  INFO 17220 --- [sboard] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-27T16:20:18.457+09:00  INFO 17220 --- [sboard] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@58d914ce
+2025-03-27T16:20:18.461+09:00  INFO 17220 --- [sboard] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-27T16:20:18.573+09:00  WARN 17220 --- [sboard] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-27T16:20:18.613+09:00  INFO 17220 --- [sboard] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.4.4
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-27T16:20:20.485+09:00  INFO 17220 --- [sboard] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-27T16:20:20.491+09:00  INFO 17220 --- [sboard] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-27T16:20:21.812+09:00  WARN 17220 --- [sboard] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-27T16:20:21.896+09:00  INFO 17220 --- [sboard] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name myUserDetailsService
+2025-03-27T16:20:23.230+09:00  INFO 17220 --- [sboard] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-03-27T16:20:23.306+09:00  INFO 17220 --- [sboard] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-03-27T16:20:23.322+09:00  INFO 17220 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : Started SboardApplication in 11.024 seconds (process running for 12.343)
+2025-03-27T16:21:22.200+09:00  INFO 17220 --- [sboard] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2025-03-27T16:21:22.207+09:00  INFO 17220 --- [sboard] [Thread-5] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-27T16:21:22.367+09:00  INFO 17220 --- [sboard] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-27T16:21:22.376+09:00  INFO 17220 --- [sboard] [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-27T16:21:22.384+09:00  INFO 17220 --- [sboard] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-27T16:21:22.500+09:00  INFO 17220 --- [sboard] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-27T16:21:22.706+09:00  INFO 17220 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : Starting SboardApplication v1.0.0-RELEASE using Java 17.0.12 with PID 17220 (C:\Users\lotte6\Desktop\workspace\sboard\build\classes\java\main started by lotte6 in C:\Users\lotte6\Desktop\workspace\sboard)
+2025-03-27T16:21:22.707+09:00  INFO 17220 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : No active profile set, falling back to 1 default profile: "default"
+2025-03-27T16:21:23.192+09:00  INFO 17220 --- [sboard] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-27T16:21:23.257+09:00  INFO 17220 --- [sboard] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 63 ms. Found 5 JPA repository interfaces.
+2025-03-27T16:21:23.582+09:00  INFO 17220 --- [sboard] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-03-27T16:21:23.584+09:00  INFO 17220 --- [sboard] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-27T16:21:23.585+09:00  INFO 17220 --- [sboard] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-03-27T16:21:23.617+09:00  INFO 17220 --- [sboard] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-27T16:21:23.618+09:00  INFO 17220 --- [sboard] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 906 ms
+2025-03-27T16:21:23.751+09:00  INFO 17220 --- [sboard] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-27T16:21:23.771+09:00  INFO 17220 --- [sboard] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-27T16:21:23.794+09:00  INFO 17220 --- [sboard] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-27T16:21:23.797+09:00  INFO 17220 --- [sboard] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2025-03-27T16:21:28.479+09:00  INFO 17220 --- [sboard] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@102cb850
+2025-03-27T16:21:28.480+09:00  INFO 17220 --- [sboard] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2025-03-27T16:21:28.493+09:00  WARN 17220 --- [sboard] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-27T16:21:28.494+09:00  INFO 17220 --- [sboard] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 8.4.4
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-27T16:21:28.700+09:00  INFO 17220 --- [sboard] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-27T16:21:28.701+09:00  INFO 17220 --- [sboard] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-27T16:21:29.182+09:00  WARN 17220 --- [sboard] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-27T16:21:29.226+09:00  INFO 17220 --- [sboard] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name myUserDetailsService
+2025-03-27T16:21:29.895+09:00  INFO 17220 --- [sboard] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-03-27T16:21:29.934+09:00  INFO 17220 --- [sboard] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-03-27T16:21:29.943+09:00  INFO 17220 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : Started SboardApplication in 7.295 seconds (process running for 78.965)
+2025-03-27T16:21:29.948+09:00  INFO 17220 --- [sboard] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-03-27T16:21:31.371+09:00  INFO 17220 --- [sboard] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2025-03-27T16:21:31.374+09:00  INFO 17220 --- [sboard] [Thread-7] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-27T16:21:31.552+09:00  INFO 17220 --- [sboard] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-27T16:21:31.558+09:00  INFO 17220 --- [sboard] [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-27T16:21:31.560+09:00  INFO 17220 --- [sboard] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2025-03-27T16:21:31.676+09:00  INFO 17220 --- [sboard] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2025-03-27T16:21:31.892+09:00  INFO 17220 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : Starting SboardApplication v1.0.0-RELEASE using Java 17.0.12 with PID 17220 (C:\Users\lotte6\Desktop\workspace\sboard\build\classes\java\main started by lotte6 in C:\Users\lotte6\Desktop\workspace\sboard)
+2025-03-27T16:21:31.893+09:00  INFO 17220 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : No active profile set, falling back to 1 default profile: "default"
+2025-03-27T16:21:32.323+09:00  INFO 17220 --- [sboard] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-27T16:21:32.378+09:00  INFO 17220 --- [sboard] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52 ms. Found 5 JPA repository interfaces.
+2025-03-27T16:21:32.662+09:00  INFO 17220 --- [sboard] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-03-27T16:21:32.663+09:00  INFO 17220 --- [sboard] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-27T16:21:32.664+09:00  INFO 17220 --- [sboard] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-03-27T16:21:32.693+09:00  INFO 17220 --- [sboard] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-27T16:21:32.693+09:00  INFO 17220 --- [sboard] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 795 ms
+2025-03-27T16:21:32.795+09:00  INFO 17220 --- [sboard] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-27T16:21:32.801+09:00  INFO 17220 --- [sboard] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-27T16:21:32.817+09:00  INFO 17220 --- [sboard] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-27T16:21:32.819+09:00  INFO 17220 --- [sboard] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2025-03-27T16:21:32.940+09:00  INFO 17220 --- [sboard] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5244ed7
+2025-03-27T16:21:32.941+09:00  INFO 17220 --- [sboard] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2025-03-27T16:21:32.954+09:00  WARN 17220 --- [sboard] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-27T16:21:32.955+09:00  INFO 17220 --- [sboard] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-3)']
+	Database driver: undefined/unknown
+	Database version: 8.4.4
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-27T16:21:33.127+09:00  INFO 17220 --- [sboard] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-27T16:21:33.127+09:00  INFO 17220 --- [sboard] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-27T16:21:33.542+09:00  WARN 17220 --- [sboard] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-27T16:21:33.580+09:00  INFO 17220 --- [sboard] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name myUserDetailsService
+2025-03-27T16:21:34.134+09:00  INFO 17220 --- [sboard] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-03-27T16:21:34.160+09:00  INFO 17220 --- [sboard] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-03-27T16:21:34.168+09:00  INFO 17220 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : Started SboardApplication in 2.339 seconds (process running for 83.189)
+2025-03-27T16:21:34.171+09:00  INFO 17220 --- [sboard] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-03-27T16:21:47.076+09:00  INFO 17220 --- [sboard] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-27T16:21:47.078+09:00  INFO 17220 --- [sboard] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-03-27T16:21:47.081+09:00  INFO 17220 --- [sboard] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-03-27T16:21:48.792+09:00  WARN 17220 --- [sboard] [http-nio-8080-exec-2] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8080-exec-2][/user/login] Deprecated attribute {th:include,data-th-include} found in template /user/login, line 10, col 19. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2025-03-27T16:21:48.796+09:00  WARN 17220 --- [sboard] [http-nio-8080-exec-2] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-2][/user/login] Deprecated unwrapped fragment expression "/user/_head.html" found in template /user/login, line 10, col 19. Please use the complete syntax of fragment expressions instead ("~{/user/_head.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-03-27T16:21:48.809+09:00  WARN 17220 --- [sboard] [http-nio-8080-exec-2] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8080-exec-2][/user/login] Deprecated attribute {th:include,data-th-include} found in template /user/login, line 40, col 19. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2025-03-27T16:21:48.809+09:00  WARN 17220 --- [sboard] [http-nio-8080-exec-2] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-2][/user/login] Deprecated unwrapped fragment expression "/user/_tail.html" found in template /user/login, line 40, col 19. Please use the complete syntax of fragment expressions instead ("~{/user/_tail.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-03-27T16:21:53.744+09:00  INFO 17220 --- [sboard] [http-nio-8080-exec-6] k.c.s.security.MyUserDetailsService      : username : chhak
+2025-03-27T16:21:53.861+09:00 TRACE 17220 --- [sboard] [http-nio-8080-exec-6] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [chhak]
+2025-03-27T16:21:54.958+09:00 TRACE 17220 --- [sboard] [http-nio-8080-exec-7] org.hibernate.orm.jdbc.bind              : binding parameter (1:INTEGER) <- [0]
+2025-03-27T16:21:54.958+09:00 TRACE 17220 --- [sboard] [http-nio-8080-exec-7] org.hibernate.orm.jdbc.bind              : binding parameter (2:INTEGER) <- [10]
+2025-03-27T16:21:55.100+09:00  INFO 17220 --- [sboard] [http-nio-8080-exec-7] kr.co.sboard.service.ArticleService      : pageArticle : Page 1 of 78 containing com.querydsl.core.types.QTuple$TupleImpl instances
+2025-03-27T16:21:55.159+09:00 TRACE 17220 --- [sboard] [http-nio-8080-exec-7] org.hibernate.orm.jdbc.bind              : binding parameter (1:INTEGER) <- [16375]
+2025-03-27T16:21:55.177+09:00 TRACE 17220 --- [sboard] [http-nio-8080-exec-7] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [chhak]
+2025-03-27T16:21:55.198+09:00 TRACE 17220 --- [sboard] [http-nio-8080-exec-7] org.hibernate.orm.jdbc.bind              : binding parameter (1:INTEGER) <- [16374]
+2025-03-27T16:21:55.212+09:00 TRACE 17220 --- [sboard] [http-nio-8080-exec-7] org.hibernate.orm.jdbc.bind              : binding parameter (1:INTEGER) <- [16373]
+2025-03-27T16:21:55.227+09:00 TRACE 17220 --- [sboard] [http-nio-8080-exec-7] org.hibernate.orm.jdbc.bind              : binding parameter (1:INTEGER) <- [16372]
+2025-03-27T16:21:55.241+09:00 TRACE 17220 --- [sboard] [http-nio-8080-exec-7] org.hibernate.orm.jdbc.bind              : binding parameter (1:INTEGER) <- [16371]
+2025-03-27T16:21:55.262+09:00 TRACE 17220 --- [sboard] [http-nio-8080-exec-7] org.hibernate.orm.jdbc.bind              : binding parameter (1:INTEGER) <- [887]
+2025-03-27T16:21:55.275+09:00 TRACE 17220 --- [sboard] [http-nio-8080-exec-7] org.hibernate.orm.jdbc.bind              : binding parameter (1:INTEGER) <- [886]
+2025-03-27T16:21:55.288+09:00 TRACE 17220 --- [sboard] [http-nio-8080-exec-7] org.hibernate.orm.jdbc.bind              : binding parameter (1:INTEGER) <- [885]
+2025-03-27T16:21:55.302+09:00 TRACE 17220 --- [sboard] [http-nio-8080-exec-7] org.hibernate.orm.jdbc.bind              : binding parameter (1:INTEGER) <- [884]
+2025-03-27T16:21:55.315+09:00 TRACE 17220 --- [sboard] [http-nio-8080-exec-7] org.hibernate.orm.jdbc.bind              : binding parameter (1:INTEGER) <- [883]
+2025-03-27T16:21:55.338+09:00  WARN 17220 --- [sboard] [http-nio-8080-exec-7] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8080-exec-7][/article/list] Deprecated attribute {th:include,data-th-include} found in template /article/list, line 10, col 19. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2025-03-27T16:21:55.339+09:00  WARN 17220 --- [sboard] [http-nio-8080-exec-7] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-7][/article/list] Deprecated unwrapped fragment expression "/article/_header.html" found in template /article/list, line 10, col 19. Please use the complete syntax of fragment expressions instead ("~{/article/_header.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-03-27T16:21:55.413+09:00  WARN 17220 --- [sboard] [http-nio-8080-exec-7] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8080-exec-7][/article/list] Deprecated attribute {th:include,data-th-include} found in template /article/list, line 64, col 19. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2025-03-27T16:21:55.415+09:00  WARN 17220 --- [sboard] [http-nio-8080-exec-7] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-7][/article/list] Deprecated unwrapped fragment expression "/article/_footer.html" found in template /article/list, line 64, col 19. Please use the complete syntax of fragment expressions instead ("~{/article/_footer.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-03-27T16:22:02.181+09:00 TRACE 17220 --- [sboard] [http-nio-8080-exec-9] org.hibernate.orm.jdbc.bind              : binding parameter (1:INTEGER) <- [16375]
+2025-03-27T16:22:02.227+09:00 TRACE 17220 --- [sboard] [http-nio-8080-exec-9] org.hibernate.orm.jdbc.bind              : binding parameter (1:INTEGER) <- [16375]
+2025-03-27T16:22:02.239+09:00 TRACE 17220 --- [sboard] [http-nio-8080-exec-9] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [chhak]
+2025-03-27T16:22:02.261+09:00  WARN 17220 --- [sboard] [http-nio-8080-exec-9] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8080-exec-9][/article/view] Deprecated attribute {th:include,data-th-include} found in template /article/view, line 83, col 19. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2025-03-27T16:22:02.262+09:00  WARN 17220 --- [sboard] [http-nio-8080-exec-9] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-9][/article/view] Deprecated unwrapped fragment expression "/article/_header.html" found in template /article/view, line 83, col 19. Please use the complete syntax of fragment expressions instead ("~{/article/_header.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-03-27T16:22:02.273+09:00  WARN 17220 --- [sboard] [http-nio-8080-exec-9] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8080-exec-9][/article/view] Deprecated attribute {th:include,data-th-include} found in template /article/view, line 142, col 19. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2025-03-27T16:22:02.274+09:00  WARN 17220 --- [sboard] [http-nio-8080-exec-9] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-9][/article/view] Deprecated unwrapped fragment expression "/article/_footer.html" found in template /article/view, line 142, col 19. Please use the complete syntax of fragment expressions instead ("~{/article/_footer.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-03-27T16:22:02.371+09:00  INFO 17220 --- [sboard] [http-nio-8080-exec-1] k.c.sboard.controller.CommentController  : parent : 16375
+2025-03-27T16:22:02.434+09:00 TRACE 17220 --- [sboard] [http-nio-8080-exec-1] org.hibernate.orm.jdbc.bind              : binding parameter (1:INTEGER) <- [16375]
+2025-03-27T16:22:02.464+09:00 TRACE 17220 --- [sboard] [http-nio-8080-exec-1] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [chhak]
+2025-03-27T16:22:07.222+09:00 TRACE 17220 --- [sboard] [http-nio-8080-exec-2] org.hibernate.orm.jdbc.bind              : binding parameter (1:INTEGER) <- [0]
+2025-03-27T16:22:07.222+09:00 TRACE 17220 --- [sboard] [http-nio-8080-exec-2] org.hibernate.orm.jdbc.bind              : binding parameter (2:INTEGER) <- [10]
+2025-03-27T16:22:07.251+09:00  INFO 17220 --- [sboard] [http-nio-8080-exec-2] kr.co.sboard.service.ArticleService      : pageArticle : Page 1 of 78 containing com.querydsl.core.types.QTuple$TupleImpl instances
+2025-03-27T16:22:07.254+09:00 TRACE 17220 --- [sboard] [http-nio-8080-exec-2] org.hibernate.orm.jdbc.bind              : binding parameter (1:INTEGER) <- [16375]
+2025-03-27T16:22:07.266+09:00 TRACE 17220 --- [sboard] [http-nio-8080-exec-2] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [chhak]
+2025-03-27T16:22:07.282+09:00 TRACE 17220 --- [sboard] [http-nio-8080-exec-2] org.hibernate.orm.jdbc.bind              : binding parameter (1:INTEGER) <- [16374]
+2025-03-27T16:22:07.295+09:00 TRACE 17220 --- [sboard] [http-nio-8080-exec-2] org.hibernate.orm.jdbc.bind              : binding parameter (1:INTEGER) <- [16373]
+2025-03-27T16:22:07.307+09:00 TRACE 17220 --- [sboard] [http-nio-8080-exec-2] org.hibernate.orm.jdbc.bind              : binding parameter (1:INTEGER) <- [16372]
+2025-03-27T16:22:07.323+09:00 TRACE 17220 --- [sboard] [http-nio-8080-exec-2] org.hibernate.orm.jdbc.bind              : binding parameter (1:INTEGER) <- [16371]
+2025-03-27T16:22:07.341+09:00 TRACE 17220 --- [sboard] [http-nio-8080-exec-2] org.hibernate.orm.jdbc.bind              : binding parameter (1:INTEGER) <- [887]
+2025-03-27T16:22:07.353+09:00 TRACE 17220 --- [sboard] [http-nio-8080-exec-2] org.hibernate.orm.jdbc.bind              : binding parameter (1:INTEGER) <- [886]
+2025-03-27T16:22:07.366+09:00 TRACE 17220 --- [sboard] [http-nio-8080-exec-2] org.hibernate.orm.jdbc.bind              : binding parameter (1:INTEGER) <- [885]
+2025-03-27T16:22:07.380+09:00 TRACE 17220 --- [sboard] [http-nio-8080-exec-2] org.hibernate.orm.jdbc.bind              : binding parameter (1:INTEGER) <- [884]
+2025-03-27T16:22:07.394+09:00 TRACE 17220 --- [sboard] [http-nio-8080-exec-2] org.hibernate.orm.jdbc.bind              : binding parameter (1:INTEGER) <- [883]
+2025-03-27T16:22:07.410+09:00  WARN 17220 --- [sboard] [http-nio-8080-exec-2] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8080-exec-2][/article/list] Deprecated attribute {th:include,data-th-include} found in template /article/list, line 10, col 19. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2025-03-27T16:22:07.411+09:00  WARN 17220 --- [sboard] [http-nio-8080-exec-2] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-2][/article/list] Deprecated unwrapped fragment expression "/article/_header.html" found in template /article/list, line 10, col 19. Please use the complete syntax of fragment expressions instead ("~{/article/_header.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-03-27T16:22:07.431+09:00  WARN 17220 --- [sboard] [http-nio-8080-exec-2] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8080-exec-2][/article/list] Deprecated attribute {th:include,data-th-include} found in template /article/list, line 64, col 19. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2025-03-27T16:22:07.432+09:00  WARN 17220 --- [sboard] [http-nio-8080-exec-2] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-2][/article/list] Deprecated unwrapped fragment expression "/article/_footer.html" found in template /article/list, line 64, col 19. Please use the complete syntax of fragment expressions instead ("~{/article/_footer.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-03-27T16:22:09.522+09:00 TRACE 17220 --- [sboard] [http-nio-8080-exec-4] org.hibernate.orm.jdbc.bind              : binding parameter (1:INTEGER) <- [16374]
+2025-03-27T16:22:09.567+09:00 TRACE 17220 --- [sboard] [http-nio-8080-exec-4] org.hibernate.orm.jdbc.bind              : binding parameter (1:INTEGER) <- [16374]
+2025-03-27T16:22:09.580+09:00 TRACE 17220 --- [sboard] [http-nio-8080-exec-4] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [chhak]
+2025-03-27T16:22:09.597+09:00  WARN 17220 --- [sboard] [http-nio-8080-exec-4] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8080-exec-4][/article/view] Deprecated attribute {th:include,data-th-include} found in template /article/view, line 83, col 19. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2025-03-27T16:22:09.597+09:00  WARN 17220 --- [sboard] [http-nio-8080-exec-4] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-4][/article/view] Deprecated unwrapped fragment expression "/article/_header.html" found in template /article/view, line 83, col 19. Please use the complete syntax of fragment expressions instead ("~{/article/_header.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-03-27T16:22:09.604+09:00  WARN 17220 --- [sboard] [http-nio-8080-exec-4] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8080-exec-4][/article/view] Deprecated attribute {th:include,data-th-include} found in template /article/view, line 142, col 19. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2025-03-27T16:22:09.605+09:00  WARN 17220 --- [sboard] [http-nio-8080-exec-4] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-4][/article/view] Deprecated unwrapped fragment expression "/article/_footer.html" found in template /article/view, line 142, col 19. Please use the complete syntax of fragment expressions instead ("~{/article/_footer.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-03-27T16:22:09.703+09:00  INFO 17220 --- [sboard] [http-nio-8080-exec-6] k.c.sboard.controller.CommentController  : parent : 16374
+2025-03-27T16:22:09.708+09:00 TRACE 17220 --- [sboard] [http-nio-8080-exec-6] org.hibernate.orm.jdbc.bind              : binding parameter (1:INTEGER) <- [16374]

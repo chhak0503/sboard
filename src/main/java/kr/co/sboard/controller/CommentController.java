@@ -25,9 +25,10 @@ public class CommentController {
 
     @ResponseBody
     @GetMapping("/comment/list")
-    public List<CommentDTO> list(){
+    public List<CommentDTO> list(int parent){
+        log.info("parent : {}", parent);
 
-        List<CommentDTO> commentDTOList = commentService.findAll();
+        List<CommentDTO> commentDTOList = commentService.findByParent(parent);
 
         return commentDTOList;
     }
